@@ -46,7 +46,7 @@ header li a:hover, header li a:focus {
 }
 
 header li a.active {
-    border-color: transparent;
+    border-color: #d679a6;
     color: #d679a6;
     font-weight: bold;
     pointer-events: none;

@@ -11,3 +11,7 @@
 .hidden {
     display: none !important;
 }
+
+.prevent-scroll {
+    overflow-y: hidden !important;
+}

@@ -1,5 +1,5 @@
 * {
-    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
 }
 
 html {
@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: black;
-    background-image: url("/src/assets/img/header.jpg");
+    background-image: url("../img/header.jpg");
     background-size: auto 100vw;
     background-attachment: scroll;
     background-position: top center;
