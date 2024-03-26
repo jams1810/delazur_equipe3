@@ -1,0 +1,329 @@
+:root {
+    overflow-x: hidden;
+    --color-pink-primary: #d679a6;
+    --color-pink-secondary: #e28196;
+    --color-yellow: #f5c555;
+    --color-black: rgba(0, 0, 0, 0.7);
+}
+
+.pink-primary {
+    color: var(--color-pink-primary);
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.black {
+    background-color: var(--color-black);
+}
+
+.bg-pink-secondary {
+    background-color: var(--color-pink-secondary);
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+header nav ul li.active a {
+    color: var(--color-pink-primary);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-family: 'Damion', serif;
+    color: var(--color-pink-primary);
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+label {
+    padding: 2.1rem 0;
+}
+
+legend {
+    font-weight: 600;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--color-yellow);
+    color: black;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 5rem 1rem;
+}
+
+.container-general {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px var(--color-pink-primary);
+    padding: 5rem;
+}
+
+.container-general > div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.container-address {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px var(--color-pink-primary);
+    background-color: var(--color-pink-secondary);
+    padding: 5rem;
+}
+
+.container-address > div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.container-others {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    border: solid 2px var(--color-yellow);
+}
+
+.container-others > div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.container-checkbox {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 33% 33% 33%;
+    width: 28rem;
+    padding: 1rem;
+}
+
+.container-radio {
+    display: grid;
+    grid-template-columns: 75% 13%;
+    grid-template-rows: 25% 25% 25% 25%;
+    width: 36rem;
+    padding: 3rem;
+    border: solid 2px var(--color-pink-primary);
+}
+
+.container-btn {
+    display: flex;
+    gap: 9rem;
+}
+
+.container-noborder {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-noborder.password {
+    display: flex;
+    padding: 4rem 0;
+}
+
+/* Input styles ---v */
+
+.input-style {
+    border: 0;
+    border-bottom: solid black 0.1rem;
+    color: #000000;
+    font-size: 1.8rem;
+    width: 30rem;
+}
+
+.input-province {
+    border: #000000 solid 1px;
+    width: 30rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: var(--color-pink-primary);
+    font-size: 5rem;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    accent-color: var(--color-pink-primary);
+}
+
+input[type="color"] {
+    background-color: var(--color-yellow);
+    cursor: pointer;
+    border: none;
+}
+
+input[type="file"] {
+    border-bottom: #000000 solid 1px;
+    width: 30rem;
+    padding: 0 0 1rem 0;
+    cursor: pointer;
+}
+
+/* Modification du input range --v */
+
+input[type="range"] {
+    accent-color: var(--color-pink-primary);
+    cursor: pointer;
+    width: 30rem;
+    appearance: none;
+    padding: 0 0 1.5rem 0;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--color-pink-primary);
+    border-radius: 2rem;
+    height: 1.2rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -9px; 
+    background-color: var(--color-yellow);
+    border: var(--color-pink-primary) solid 1px;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;  
+}
+
+/* Input fin */
+
+.btn-reset, .btn-submit {
+    background-color: var(--color-yellow);
+    padding: 1.5rem 2.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: var(--color-pink-primary);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-pink-secondary);
+}
+
+.btn-reset:hover {
+    background-color: #d2a847;
+}
+
+button:focus, a:focus {
+    outline: violet;
+    border: solid 2px white;
+}
+
+.error-email {
+    color: red;
+    font-weight: 600;
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
+    form {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .container-general {
+        flex-flow: row wrap;
+        align-items: first baseline;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem;
+        width: 90%;
+    }
+    .container-general > label {
+        padding: 1.7rem;
+    }
+    .container-general > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-address {
+        flex-flow: row wrap;
+        align-items: first baseline;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem;
+        width: 90%;
+    }
+    .container-address > label {
+        padding: 1rem 2.5rem;
+    }
+    .container-address > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-address > .input-province {
+        width: fit-content;
+    }
+    .container-others {
+        flex-flow: row wrap;
+        align-items: first baseline;
+        justify-content: center;
+        column-gap: 3rem;
+        padding: 3rem;
+        width: 90%;
+    }
+    .container-others > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-radio-checkbox {
+        padding: 3rem;
+        flex-flow: wrap;
+    }
+    .container-noborder.password {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: first baseline;
+        padding: 1rem;
+    }
+    .container-btn {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 3rem;
+        width: 45rem;
+    }
+    .container-radio-checkbox {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10rem;
+    }
+    .container-password-btn {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
