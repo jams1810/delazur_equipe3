@@ -1,0 +1,146 @@
+:root { 
+    --black-color: rgba(0, 0, 0, 0.7);
+    --yellow-color: #f5c555;
+    --pink-color: #d679a6;
+}
+
+.black {
+    color: var(--black-color);
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+.pink{
+    color: var(--pink-color);
+}
+
+/* section pour le main */
+.album {
+    width: 250px;
+}
+
+h2.boutique {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'damion', serif;
+}
+
+h3.boutique {
+    margin: 0 0 0 30px;
+    font-size: 2.5rem;
+}
+
+.btn-ajouter {
+    margin: 10px 0 30px 0;
+    background-color: var(--yellow-color);
+    font: 1.5rem 'Montserrat', sans-serif;
+}
+
+.bg-album {
+    width: 300px;
+    background-color: var(--black-color);
+    margin: 10px 10px;
+}
+
+.img-album {
+    width: 250px;
+    height: 250px;
+    margin: 0 0 0 25px;
+}
+
+h4.boutique {
+    padding: 50px 0 15px 25px;
+    margin: 0;
+}
+
+.bg-info-album {
+    display: flex;
+    justify-content: space-around;
+}
+
+.albums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-chandails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-chandail {
+    width: 300px;
+    background-color: var(--black-color);
+    margin: 5px 5px;
+}
+
+p.chandail {
+    padding: 0 0 0 25px;
+}
+
+.bg-info-chandail {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Section pour le pop-up */
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black-color);
+}
+
+.overlay--show {
+    display: flex;
+}
+
+.popup-box{
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    background-color: var(--yellow-color);
+    padding: 20px 50px;
+}
+
+.overlay--hidden {
+    display: none;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.overlay__btn--close {
+    float: right;
+    margin: 40px 0 0 0;
+    background-color: var(--pink-color);
+    font: 1.5rem 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Ajoustements pour les écrans plus petits  */
+@media screen and (min-width: 800px) {
+    .albums {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .bg-chandails {
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
