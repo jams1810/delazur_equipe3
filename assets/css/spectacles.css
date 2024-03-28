@@ -112,13 +112,13 @@ a.btn-visit {
     color: white;
 }
 
-.button:focus, a:focus {
+.button:focus, a.spectacle:focus {
     outline: violet;
     border: solid 2px white;
 }
 
-.btn-visit:hover, a:hover {
-    background-color: #d679a6;
+.btn-visit:hover, a.spectacle:hover {
+    background-color: #971f59;
 }
 
 @media screen and (min-width: 1200px) {
