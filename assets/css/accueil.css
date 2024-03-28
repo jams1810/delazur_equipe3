@@ -1,0 +1,401 @@
+:root {
+    --black-color: #000000;
+    --yellow-color:#f5c555;
+    --pink-color: #d679a6;
+    --white-color: #FFFFFF;
+}
+
+.pink {
+    color: var(--pink-color);
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+body.accueil {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: "Damion", serif;
+    font-size: 1rem;
+}
+
+h2.accueil {
+    color: var(--black-color);
+    font-size: 4.5rem;
+    margin-top: 0;
+}
+
+h3.accueil {
+    color: var(--black-color);
+    font-size:1.5rem;
+}
+
+h4.accueil {
+    font-family: "Damion", serif;
+    font-size: 4rem;
+    color: var(--pink-color);
+}
+
+h5.accueil {
+    color: var(--yellow-color);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+p.accueil {
+    font-size: 1.5rem;
+}
+
+.dernier-album {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: hsl(42, 89%, 65%, 0.8);
+    padding : 2rem;
+    min-height: 43rem;
+}
+
+.box1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1 h2.accueil {
+    margin-top: 2.3rem;
+}
+
+.box1-0 {
+    display: flex;
+}
+
+a.accueil {
+    text-decoration: none;
+}
+
+.spotify {
+    width:5rem;
+}
+
+.zero {
+    display: flex;
+    max-height: 36rem;
+    z-index: 10;
+    opacity: 1;
+}
+
+.img-degrade {
+    position: absolute;
+    display: flex;
+    max-height: 36rem;
+    display: none;
+    visibility: hidden;
+    backdrop-filter: brightness(150%) saturate(150%);
+}
+
+.un {
+    transform: translateX(3.5rem);
+    z-index: 9;
+    filter: opacity(70%);
+}
+
+.deux {
+    transform: translateX(7rem);
+    z-index: 8;
+    filter: opacity(60%);
+}
+
+.trois {
+    transform: translateX(10.5rem);
+    z-index: 7;
+    filter: opacity(40%);
+}
+
+.quatre {
+    transform: translateX(14rem);
+    z-index: 6;
+    filter: opacity(40%);
+}
+
+.cinq {
+    transform: translateX(17.5rem);
+    z-index: 5;
+    filter: opacity(40%);
+}
+
+.six {
+    transform: translateX(21rem);
+    z-index: 4;
+    filter: opacity(40%);
+}
+
+.sept {
+    transform: translateX(24.5rem);
+    z-index: 3;
+    filter: opacity(40%);
+}
+
+.huit {
+    transform: translateX(28rem);
+    z-index: 2;
+    filter: opacity(30%);
+}
+
+.neuf {
+    transform: translateX(31.5rem);
+    z-index: 1;
+    filter: opacity(30%);
+}
+
+.dix {
+    transform: translateX(35rem);
+    z-index: 0;
+    filter: opacity(20%);
+}
+
+.box2-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 13;
+    top: 18rem;
+    padding: 0 2rem;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+    gap: 6rem;
+    cursor: pointer;
+}
+
+.box3-0 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+.box3 div p {
+    font-size: 1.1rem;
+    color: var(--black-color);
+}
+
+.box3-1, .box3-2 {
+    display: flex;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.box3 i.accueil {
+    color: var(--black-color);
+    scale: 350%;
+}
+
+.intro-titre > p.accueil {
+    padding: 4rem 3rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide__slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 34rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    cursor: pointer;
+}
+
+button.accueil {
+    color: #f5c555;
+    scale: 300%;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.slider__btn--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.artiste {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 34rem;
+}
+
+.artiste img.accueil {
+    display: flex;
+    justify-content: center;
+    width: 34rem;
+    height: auto;
+    z-index: 1;
+}
+
+.nom {
+display: flex;
+position: absolute;
+text-align: left;
+z-index: 2;
+margin: 0;
+left: 1rem;
+}
+
+.details.artiste {
+    display: flex;
+    justify-content: end;
+}
+
+table {
+    position: absolute;
+    width: 88%;
+    right: auto;
+    left: auto;
+    bottom: 1rem;
+    display: flex;
+    text-align: left;
+    border: none;
+    border-spacing: 0;
+    border-bottom-color: 0;
+    color:var(--white-color);
+    z-index: 1;
+    display: none;
+    visibility: hidden;
+}
+
+th, td {
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 0.16rem solid var(--white-color);
+}
+
+td {
+    padding-left: 0.8rem;
+}
+
+.artiste:hover table {
+    display: table;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1rem;
+    padding: 3rem 1rem 1rem;
+}
+
+main a.accueil:hover {
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem #00000080);
+}
+
+main a.accueil:active {
+    opacity: 0.7;
+}
+
+main a.accueil:focus {
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem #00000080);
+}
+
+button.accueil:hover {
+    filter: drop-shadow(0.13rem 0.13rem 0.13rem #ffffff70);
+}
+
+@media screen and (min-width: 800px) {
+    h2.accueil {
+        font-size: 4.1rem;
+    }
+
+    .dernier-album {
+        position: relative;
+        justify-content: center;
+    }
+
+    .box1 {
+        position: absolute;
+        left: 30;
+    }
+
+    .box3 {
+        gap: 4.9rem;
+    }
+
+    .zero {
+        max-height: 36rem;
+    }
+
+    .img-degrade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 36rem;
+        display: table;
+        visibility: visible;
+    }
+
+    .box2-1 {
+        position: absolute;
+        top: 18rem;
+        right: 1.5rem;
+        width: fit-content;
+    }
+
+    .intro,
+    .slider {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 6rem;
+    }
+
+    button.accueil {
+        display: none;
+        visibility: hidden;
+    }
+
+    .slide__slides {
+        width: 100vw;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .artiste {
+        width: 28rem;
+    }
+
+    .artiste img.accueil {
+        width: 28rem;
+        margin: 0 3rem;
+    }
+
+}
