@@ -10,10 +10,6 @@
     color: var(--color-pink-primary);
 }
 
-.yellow {
-    background-color: var(--color-yellow);
-}
-
 .black {
     background-color: var(--color-black);
 }
@@ -26,11 +22,7 @@
     background-color: var(--color-yellow);
 }
 
-header nav ul li.active a {
-    color: var(--color-pink-primary);
-}
-
-main {
+main.contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,23 +31,23 @@ main {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-h2 {
+h2.contact {
     font-family: 'Damion', serif;
     color: var(--color-pink-primary);
     font-size: 4.5rem;
     font-weight: 400;
 }
 
-label {
+label.contact {
     padding: 2.1rem 0;
 }
 
-legend {
+legend.contact {
     font-weight: 600;
     text-align: center;
 }
 
-form {
+form.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,7 +227,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: #d2a847;
 }
 
-button:focus, a:focus {
+button.btn-reset:focus, button.btn-submit:focus, a.serif:focus {
     outline: violet;
     border: solid 2px white;
 }
@@ -247,11 +239,12 @@ button:focus, a:focus {
 }
 
 @media screen and (min-width: 1200px) {
-    form {
+    form.contact {
         flex-flow: row wrap;
         justify-content: center;
         gap: 3rem;
     }
+    
     .container-general {
         flex-flow: row wrap;
         align-items: first baseline;
@@ -260,13 +253,16 @@ button:focus, a:focus {
         padding: 3rem;
         width: 90%;
     }
+
     .container-general > label {
         padding: 1.7rem;
     }
+
     .container-general > div {
         display: flex;
         flex-direction: column;
     }
+
     .container-address {
         flex-flow: row wrap;
         align-items: first baseline;
@@ -275,16 +271,20 @@ button:focus, a:focus {
         padding: 3rem;
         width: 90%;
     }
+
     .container-address > label {
         padding: 1rem 2.5rem;
     }
+
     .container-address > div {
         display: flex;
         flex-direction: column;
     }
+
     .container-address > .input-province {
         width: fit-content;
     }
+
     .container-others {
         flex-flow: row wrap;
         align-items: first baseline;
@@ -293,21 +293,35 @@ button:focus, a:focus {
         padding: 3rem;
         width: 90%;
     }
+
     .container-others > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+    .container-others > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input[type="datetime-local" i] {
+        margin: auto;
+    }
+
     .container-radio-checkbox {
         padding: 3rem;
         flex-flow: wrap;
     }
+
     .container-noborder.password {
         display: flex;
         flex-flow: column wrap;
         align-items: first baseline;
         padding: 1rem;
     }
+
     .container-btn {
         display: flex;
         flex-flow: row wrap;
@@ -315,11 +329,13 @@ button:focus, a:focus {
         padding: 3rem;
         width: 45rem;
     }
+
     .container-radio-checkbox {
         display: flex;
         flex-flow: row wrap;
         gap: 10rem;
     }
+
     .container-password-btn {
         display: flex;
         flex-flow: column wrap;
