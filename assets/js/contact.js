@@ -1,6 +1,6 @@
 const eMail = document.querySelector('#eMail');
 const errorEmail = document.querySelector('.error-email');
-const form = document.querySelector('form');
+const form = document.querySelector('form.contact');
 
 
 /**
