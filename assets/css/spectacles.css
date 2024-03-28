@@ -1,0 +1,136 @@
+:root {
+    overflow-x: hidden;
+    --black-color: rgba(0, 0, 0, 0.7);
+    --yellow-color: #f5c555;
+    --pink-color: #d679a6;
+    --yellow-trans-color: #f5c55542;
+}
+
+.black {
+    color: var(--black-color);
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+.pink{
+    color: var(--pink-color);
+}
+
+.main-spectacle {
+    padding: 0 3rem;
+    background-color: var(--black-color);
+}
+
+h2.spectacles {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'damion', serif;
+    letter-spacing: 3px;
+}
+
+.like-counter {
+    color: var(--yellow-color);
+    font-size: 1.8rem;
+    text-align: end;
+}
+
+.bg-spectacle {
+    background-color: var(--yellow-trans-color);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--pink-color);
+    padding: 2.5rem;
+}
+
+.spectacle-name {
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.spectacle-date {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.spectacle-place {
+    font-size: 1.5rem;
+}
+
+.bg-btn-like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-visit {
+    background-color: var(--pink-color);
+    border: 1px solid var(--yellow-color);
+    font-size: 0.5rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+a.btn-visit {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    line-height: 3;
+    font-size: 1.2rem;
+}
+
+.icons {
+    background: none;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+}
+
+.fa-regular {
+    display: block;
+}
+
+.fa-heart:before {
+    font-size: 3rem;
+    color: var(--pink-color);
+    height: 6rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.fa-solid {
+    display: block;
+}
+
+.arrow-right {
+    color: white;
+}
+
+.button:focus, a.spectacle:focus {
+    outline: violet;
+    border: solid 2px white;
+}
+
+.btn-visit:hover, a.spectacle:hover {
+    background-color: #971f59;
+}
+
+@media screen and (min-width: 1200px) {
+    .spectacle-name {
+        font-size: 2.2rem;
+    }
+    
+    .spectacle-date {
+        font-size: 1.5rem;
+    }
+    
+    .spectacle-place {
+        font-size: 1.5rem;
+    }
+}
